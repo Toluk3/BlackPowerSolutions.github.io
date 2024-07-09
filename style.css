@@ -10,6 +10,7 @@ body, h1, h2, h3, p, ul {
 
 body{
     background: radial-gradient(circle, #d3d3d3, #ebdcf5); /* Degradado circular */
+    
 }
 .topBar {
     display: flex;
@@ -35,6 +36,11 @@ body{
     color: transparent;
 }
 
+.general{
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+}
 .presentation-container {
     display: flex;
     flex-direction: row;
@@ -45,6 +51,9 @@ body{
     padding: 20px;
     width: 80%;
     max-width: 1200px;
+    margin-left: 10%;
+    border: 2px solid white;
+    animation: glow 1.5s infinite alternate;
 }
 .content {
     flex: 1;
@@ -52,6 +61,29 @@ body{
 }
 .content h1 {
     margin-top: 0;
+    font-size: 2.5em;
+    color: #6f00ff;
+}
+.content p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+.start-button {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #ae00ff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.start-button:hover {
+    background-color: #8400ff;
 }
 .imgcontent {
     flex: 1;
@@ -62,4 +94,13 @@ body{
 .imgcontent2 {
     max-width: 100%;
     border-radius: 15px;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 20px rgba(131, 1, 253, 0.205);
+    }
 }
