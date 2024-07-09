@@ -1,0 +1,15 @@
+.topBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(121, 0, 121, 0.623);
+    padding: 1rem 2rem;
+    color: #fff;
+}
+
+.topBar p {
+    font-family: ;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
