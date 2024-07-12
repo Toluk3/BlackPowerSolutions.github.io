@@ -19,7 +19,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(158, 158, 158, 0.247);
+    background-color: rgba(255, 255, 255, 0.699);
     padding: 1rem 3rem 1rem 1rem;
     color: #fff;
 }
@@ -151,7 +151,7 @@ body{
     padding: 2%;
 }
 .foot{
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.9));
 }
 .socialfoot{
     margin-top: 10rem;
