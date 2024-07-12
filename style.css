@@ -37,14 +37,22 @@ body{
     margin-top: 1.3rem;
 }
 
-.general{
+.general-1{
     display: flex;
     width: 100%;
     margin-top: 30px;
+    justify-content: flex-end;
 }
+.general{
+    display: flex;
+    width: 100%;
+    margin-top: 30px; 
+}
+
 .presentation-container {
     display: flex;
     flex-direction: row;
+    float: left;
     background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(20px);
     border-radius: 30px;
@@ -53,6 +61,23 @@ body{
     width: 80%;
     max-width: 1200px;
     margin-left: 10%;
+    margin-top: 2%;
+    border: 2px solid white;
+    animation: glow 1.5s infinite alternate;
+}
+.presentation-container-1 {
+    display: flex;
+    flex-direction: row;
+    float: right;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 1200px;
+    margin-right: 10%;
+    margin-top: 2%;
     border: 2px solid white;
     animation: glow 1.5s infinite alternate;
 }
@@ -95,6 +120,48 @@ body{
 .imgcontent2 {
     max-width: 100%;
     border-radius: 15px;
+}
+
+.pagedivider{
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 10rem;
+    background: linear-gradient(45deg, #ff6ec570, #7773f565);
+    
+}
+.general3{
+    display: flex;
+    width: 100%;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+.containergen3{
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 20%;
+    padding: 2%;
+}
+.foot{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.5));
+}
+.socialfoot{
+    margin-top: 10rem;
+    padding-top: 4rem;
+    
+}
+.logofoot{
+    display: flex;
+    justify-content: center;
+}
+.logofoot img{
+    margin-top: 2%;
+    width: 20%;
 }
 
 @keyframes glow {
