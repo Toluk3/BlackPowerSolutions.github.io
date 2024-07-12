@@ -10,7 +10,7 @@ body, h1, h2, h3, p, ul {
 
 body{
     background:
-    url(imgs/background3.png), 
+    url(imgs/background4.png), 
     linear-gradient(270deg, rgba(219, 145, 253, 0.5), rgba(255, 255, 255, 0.5))
     ; /* Degradado circular */
     
