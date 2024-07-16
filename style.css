@@ -1,7 +1,41 @@
-body, h1, h2, h3, p, ul {
+body, h2, h3, ul {
     margin: 0;
     padding: 0;
-    
+    text-align: justify;
+}
+
+.content h1 {
+    margin-top: 0;
+    font-size: 2.5em;
+    color: #6f00ff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.content p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 2.5em;
+    color: #6f00ff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .logo{
@@ -90,20 +124,15 @@ body{
     border: 2px solid white;
     animation: glow 1.5s infinite alternate;
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 .content {
     flex: 1;
     padding: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
-.content h1 {
-    margin-top: 0;
-    font-size: 2.5em;
-    color: #6f00ff;
-}
-.content p {
-    margin: 10px 0;
-    font-size: 1.2em;
-    line-height: 1.6;
-}
+
+
 
 ul {
     list-style-type: none;
@@ -172,6 +201,11 @@ ul li strong {
     width: 20%;
     padding: 2%;
 }
+.containergen3 p{
+    font-size: large;
+    text-align: justify;
+}
+
 .containergen3 h1{
     display: flex; /* Utiliza flexbox para alinear el contenido */
     align-items: center; /* Alinea verticalmente el contenido */
@@ -183,6 +217,7 @@ ul li strong {
     border-radius: 30px;
     text-align: center;
     margin-bottom: 20px;
+    
 }
 .containergen3 svg{
     margin-right: 10px;
