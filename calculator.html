@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head> 
+        <meta charset="UTF-8">
+        <title>Black Power Solutions</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+            
+        
+
+
+    </head>
+<body>
+    <div class="calculator">
+        <div>
+            <h3>Model</h3>
+            <select id="model">
+                <option value="188">Antminer S21 188 TH/s</option>
+                <option value="190">Antminer T21 190 TH/s</option>
+                <option value="335">Antminer S21 Hydro 335 TH/s</option>
+                
+                <!-- Add more models as needed -->
+            </select>
+            
+            <h3>Quantity</h3>
+            <div class="quantity-control">
+                <button id="decrease">-</button>
+                <input type="number" id="quantity" value="1" min="1">
+                <button id="increase">+</button>
+            </div>
+        </div>
+        <div>
+            
+            <h3>Static Mining Output per Month</h3>
+            <p id="mining-output">$345.46</p>
+            <p id="api-status"></p>
+            
+            
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>

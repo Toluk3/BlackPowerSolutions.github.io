@@ -79,11 +79,15 @@ body{
     width: 100%;
     margin-top: 30px;
     justify-content: flex-end;
+    
+    
 }
 .general{
     display: flex;
     width: 100%;
     margin-top: 30px; 
+    
+    
 }
 .general-center{
     display: flex;
@@ -107,6 +111,9 @@ body{
     margin-top: 2%;
     border: 2px solid white;
     animation: glow 1.5s infinite alternate;
+    transform: translateX(100px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    opacity: 0;
 }
 .presentation-container-1 {
     display: flex;
@@ -123,6 +130,9 @@ body{
     margin-top: 2%;
     border: 2px solid white;
     animation: glow 1.5s infinite alternate;
+    transform: translateX(-100px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    opacity: 0;
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
@@ -179,9 +189,11 @@ ul li strong {
 .pagedivider{
     width: 100%;
     margin-top: 30px;
-    padding-top: 10rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     background: linear-gradient(45deg, #ff6ec570, #7773f565);
-    
+    border-top: 1px solid blueviolet;
+    border-bottom: 1px solid blue;
 }
 .general3{
     display: flex;
@@ -200,6 +212,9 @@ ul li strong {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 20%;
     padding: 2%;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
 }
 .containergen3 p{
     font-size: large;
@@ -225,13 +240,7 @@ ul li strong {
 .foot{
     background: linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.9));
 }
-.socialfoot{
-    margin-top: 10rem;
-    padding-top: 4rem;
-    padding-left: 10rem;
-    display: inline-block;
-    border-top: 5px solid rgba(0, 0, 0, 0.267);
-}
+
 .logofoot{
     display: flex;
     justify-content: center;
@@ -243,8 +252,9 @@ ul li strong {
 }
 .socialfoot {
     text-align: left;
-    margin-top: 20px;
+    margin-top: 90px;
     display: flex;
+    border-top: 5px solid rgba(0, 0, 0, 0.267);
 }
 .socialfoot img{
     
@@ -334,6 +344,78 @@ p {
     height: 140px;
     width: 150px;
 }
+
+.calculator {
+    margin-left: 20%;
+    
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 800px;
+    width: 100%;
+    border: 2px solid white;
+    backdrop-filter: blur(20px);
+}
+
+
+   
+
+.calculator div {
+    background-color: #8c00ff36;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.calculator h3 {
+    margin-top: 0;
+}
+.calculator input, .calculator select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+}
+.quantity-control {
+    display: flex;
+    align-items: center;
+}
+.quantity-control button {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    border: none;
+    background-color: #6200ff;
+    color: white;
+    cursor: pointer;
+}
+.quantity-control input {
+    text-align: center;
+    width: 50px;
+    border: 1px solid #ccc;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.presentation-container.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+.presentation-container-1.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+.containergen3.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 
 @keyframes glow {
     0% {

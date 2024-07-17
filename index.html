@@ -12,11 +12,13 @@
 
 
     </head>
+    <script src="animate.js"></script>
     <body>
+    
         <div class="topBar">
             <a href="index.html">
             <img src="imgs/bps1t.png" class="logo"></a>
-            <a href=""><ul>Calculator</ul></a>
+            <a href="calculator.html"><ul>Calculator</ul></a>
             <a href="contact.html"><ul>Contact</ul></a>
             <a href=""><ul>About</ul></a>
         </div>
@@ -30,7 +32,7 @@
                         <p>Fast Deployment: Your equipment will be up and running in just 2 weeks.</p>
                         <p>Transparent Reporting: Receive clear and detailed reports on your earnings.</p>
                         <p>Ongoing Support: Enjoy free consultations during and after the setup process.</p>
-                        <a href="contact.html" class="start-button">Start Here</a>
+                        
                     </div>
                     <div class="imgcontent">
                         <img src="imgs/mining.png" class="imgcontent2">
@@ -58,7 +60,39 @@
     </div>
         
 
-        <div class="pagedivider"></div>
+        <div class="pagedivider">
+          <div class="calculator">
+            
+            <div>
+              <h1>Mining Profit Calculator</h1>
+                <h3>Model</h3>
+                <select id="model">
+                    <option value="188">Antminer S21 188 TH/s</option>
+                    <option value="190">Antminer T21 190 TH/s</option>
+                    <option value="335">Antminer S21 Hydro 335 TH/s</option>
+                    
+                    <!-- Add more models as needed -->
+                </select>
+                
+                <h3>Quantity</h3>
+                <div class="quantity-control">
+                    <button id="decrease">-</button>
+                    <input type="number" id="quantity" value="1" min="1">
+                    <button id="increase">+</button>
+                </div>
+            </div>
+            <div>
+                
+                <h3>Static Mining Output per Month</h3>
+                <p id="mining-output">$345.46</p>
+                <p id="api-status"></p>
+                <a href="contact.html" class="start-button">Contact for more information</a>
+                
+            </div>
+        </div>
+        <script src="calc.js"></script>
+
+        </div>
 
         <div class="general3">
             <div class="containergen3">
